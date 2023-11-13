@@ -45,7 +45,7 @@ async def root():
 
 @app.post("/ocr")
 async def ocr(image_file: UploadFile = None, image_data: str = Form(None)):
-    print(image_data)
+    # print(image_data)
     if image_file:
         img = Image.open(image_file.file)
     elif image_data:
