@@ -40,7 +40,7 @@ processor = OCRAPIUtils()
 
 @app.get("/")
 async def root():
-    return {"message": "Welcome to RapidOCR Server!"}
+    return {"message": "Welcome to OCR Server!"}
 
 
 @app.post("/ocr")
